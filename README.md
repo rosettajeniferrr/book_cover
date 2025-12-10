@@ -166,7 +166,7 @@ urlpatterns = [
 ~~~~
 
 # OUTPUT:
-![alt-text](book/coverr/static/bookoutput.png)
+book_cover/bookoutput.png
 
 # RESULT:
 The program for designing book front cover page using HTML and CSS is completed successfully.
