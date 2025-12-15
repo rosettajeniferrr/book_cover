@@ -61,7 +61,7 @@ bookcover.html
         </div>
     </body>
 </html>
-
+```
 CSS.css
 ```
     @font-face {
@@ -141,7 +141,7 @@ CSS.css
     .creators{
     color: yellow;
     }
-
+```
 
 views.py
 ```
@@ -149,8 +149,7 @@ from django.shortcuts import render
 
 def book_preview(request):
     return render(request, 'bookcover.html')
-
-
+```
 
 urls.py
 ```
@@ -162,6 +161,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.book_preview),
 ]
+```
 
 
 # OUTPUT:
