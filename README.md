@@ -29,8 +29,8 @@ Insert the images in their appropriate places.
 Publish the website in the LocalHost.
 
 # PROGRAM:
-~~~~~
-HTML
+bookcover.html
+```
 
 {% load static %}
 <html>
@@ -65,8 +65,8 @@ HTML
     </body>
 </html>
 
-CSS
-
+CSS.css
+```
     @font-face {
     font-family: 'FriendsFont';
     src: url('friends.TTF');
@@ -145,15 +145,15 @@ CSS
     color: yellow;
     }
 
-VIEWS.PY
-
+views.py
+```
 from django.shortcuts import render
 
 def book_preview(request):
     return render(request, 'bookcover.html')
 
-URLS.PY
-
+urls.py
+```
 from django.contrib import admin
 from django.urls import path
 from coverr import views
@@ -163,10 +163,9 @@ urlpatterns = [
     path('', views.book_preview),
 ]
 
-~~~~
 
 # OUTPUT:
-![alt-text](book_cover/book/coverr/static/bookoutput.png)
+![alt text](book/coverr/static/bookoutput.png)
 
 # RESULT:
 The program for designing book front cover page using HTML and CSS is completed successfully.
