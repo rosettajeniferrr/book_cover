@@ -149,7 +149,9 @@ from django.shortcuts import render
 def book_preview(request):
     return render(request, 'bookcover.html')
 
+
 urls.py
+
 ```
 from django.contrib import admin
 from django.urls import path
